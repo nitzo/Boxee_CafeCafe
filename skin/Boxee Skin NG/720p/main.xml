@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<window type="window" id="14001">
+	
+	<defaultcontrol always="false">123</defaultcontrol>	
+	<backgroundcolor>0</backgroundcolor>
+	<allowoverlay>yes</allowoverlay>
+
+<!-- Window Events -->	
+	<onload lang="python"><![CDATA[
+import functions
+functions.onload()
+]]></onload>
+	<onunload lang="python"><![CDATA[
+import functions
+functions.onunload()
+]]></onunload>
+	   
+	   
+	   
+	<controls>
+	
+	
+     <control type="label" id="110">
+       <description>some label that shows text</description>
+       <posx>50</posx>
+       <posy>50</posy>
+       <width>250</width>
+       <height>40</height>
+       <align>left</align>
+       <aligny>center</aligny>
+       <scroll>false</scroll>
+       <label>Main Window</label>
+       <number></number>
+       <haspath>false</haspath>
+       <font>font23</font>
+       <textcolor>white</textcolor>
+       <shadowcolor>grey</shadowcolor>
+       <wrapmultiline>false</wrapmultiline>
+   </control>
+       <control type="button" id="100">
+       <posx>100</posx>
+			<posy>100</posy>
+			<width>145</width>
+			<height>145</height>
+			<label>Click Me!</label>
+			<font>font36b</font>
+			<textcolor>white</textcolor>
+			<focusedcolor>green</focusedcolor>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick lang="python"><![CDATA[
+import functions
+functions.playVideo()
+]]></onclick>
+
+		<onright>120</onright>
+    </control>
+    <control type="button" id="120">
+       <posx>300</posx>
+			<posy>100</posy>
+			<width>145</width>
+			<height>145</height>
+			<label>Click Me Too!</label>
+			<font>font36b</font>
+			<textcolor>white</textcolor>
+			<focusedcolor>green</focusedcolor>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>100</onleft>
+    </control>	
+	<control type="videowindow">
+		<posx>700</posx>
+		<posy>50</posy>
+		<width>500</width>
+		<height>500</height>
+    </control>
+	
+	 <control type="wraplist" id="123">
+
+
+		<posx>10</posx>
+       <posy>300</posy>
+       <width>1224</width>
+       <height>171</height>
+       <visible>true</visible>
+       <orientation>horizontal</orientation>
+       <pagecontrol>25</pagecontrol>
+       <scrolltime>200</scrolltime>
+       <focusposition>0</focusposition>
+	    <preloaditems>1</preloaditems>	   
+	     <onup>2</onup>
+		<ondown>3</ondown>
+		<onleft>1</onleft>
+		<onright>1</onright>
+
+       <itemlayout width="1224" height="171">
+			<control type="label">
+             <posx>30</posx>
+             <posy>3</posy>
+             <width>430</width>
+             <height>40</height>
+             <font>font23</font>
+             <textcolor>white</textcolor>
+             <selectedcolor>green</selectedcolor>
+              <label></label>
+          </control>     
+        </itemlayout>
+       <focusedlayout height="171" width="1224">
+          <control type="label">
+             <posx>0</posx>
+             <posy>3</posy>
+             <width>430</width>
+             <height>40</height>
+             <font>font23</font>
+             <textcolor>green</textcolor>
+             <selectedcolor>green</selectedcolor>
+              <label>$INFO[ListItem.Icon] A</label>
+          </control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>46</posy>
+				 <width>1224</width>
+				<height>105</height>
+				<info>ListItem.Icon</info>
+			</control>
+       </focusedlayout>
+
+    </control>
+	
+	
+   </controls>
+</window>

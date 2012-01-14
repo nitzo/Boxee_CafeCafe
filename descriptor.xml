@@ -1,0 +1,16 @@
+<app>
+  <id>5</id>
+  <name>Cafe Cafe</name>
+  <version>1.0</version>
+  <description>Boxee CafeCafe App</description>
+  <thumb>http://tapp.boxee.tv/apps/boxee_basic_python/thumb.png</thumb>
+  <repository>http://dir.boxee.tv/apps</repository>
+  <media>video</media>
+  <copyright>boxee</copyright>
+  <email>support@boxee.tv</email>
+  <type>skin</type>
+  <startWindow>start</startWindow>
+  <platform>all</platform>
+  <minversion>0.9.21</minversion>
+  <test-app>true</test-app>
+</app>
