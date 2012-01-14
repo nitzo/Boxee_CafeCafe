@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <window type="window" id="14000">
-<defaultcontrol always="false">123</defaultcontrol>
-   <backgroundcolor>white</backgroundcolor>
+	
+   <backgroundcolor>0</backgroundcolor>
    <allowoverlay>yes</allowoverlay>
    
 <controls>
@@ -21,6 +21,6 @@
        <textcolor>white</textcolor>
        <shadowcolor>grey</shadowcolor>
        <wrapmultiline>false</wrapmultiline>
-   </control>
+ </control>
 </controls>
 </window>
