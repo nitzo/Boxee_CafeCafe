@@ -19,6 +19,16 @@ main.onunload()
 	   
 	<controls>
 	
+		<control type="group">
+			<control type="image">
+				<posx>37</posx>
+				<posy>151</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>ContainerLeftImage.png</texture>
+			</control>
+		
+		</control>
 	
 <!-- Video Window -->
 	<control type="videowindow">
