@@ -3,13 +3,13 @@
   <name>Cafe Cafe</name>
   <version>1.0</version>
   <description>Boxee CafeCafe App</description>
-  <thumb>http://tapp.boxee.tv/apps/boxee_basic_python/thumb.png</thumb>
+  <thumb>http://imageshack.us/photo/my-images/854/thumbnaili.png</thumb>
   <repository>http://dir.boxee.tv/apps</repository>
   <media>video</media>
-  <copyright>boxee</copyright>
-  <email>support@boxee.tv</email>
+  <copyright>ANM</copyright>
+  <email>anm@gmail.com</email>
   <type>skin</type>
-  <startWindow>start</startWindow>
+  <startWindow>14000</startWindow>
   <platform>all</platform>
   <minversion>0.9.21</minversion>
   <test-app>true</test-app>
