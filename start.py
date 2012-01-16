@@ -13,5 +13,6 @@ Pre App Load Stuff
 '''
 Activate Splash Screen + Main Window
 '''
-mc.ActivateWindow(14000)	#Splash Screen
-mc.ActivateWindow(14001)	#Main Application Window
+#mc.ActivateWindow(14001)	#Splash Screen
+mc.ActivateWindow(14000)	#Main Application Window
+
