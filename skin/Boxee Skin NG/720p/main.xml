@@ -28,14 +28,25 @@ main.onunload()
 			</control>
 		
 			<control type="image">
+				<posx>657</posx>
+				<posy>155</posy>
+				<width>588</width>
+				<height>421</height>
+				<texture>ContainerRighMenu.png</texture>
+			</control>
+			
+			<control type="image">
 				<posx>37</posx>
-				<posy>151</posy>
+				<posy>155</posy>
 				<width>604</width>
 				<height>420</height>
 				<texture>ContainerLeftImage.png</texture>
 			</control>
+			
+			
 		</control>
 
+		
 <!-- Ads List Container -->
 
 		<control type="wraplist" id="120">
