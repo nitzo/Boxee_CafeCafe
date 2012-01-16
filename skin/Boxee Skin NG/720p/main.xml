@@ -18,70 +18,67 @@ main.onunload()
 	   
 	   
 	<controls>
-	
 		<control type="group">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>Background.png</texture>
+			</control>
+		
 			<control type="image">
 				<posx>37</posx>
 				<posy>151</posy>
-				<width>1280</width>
-				<height>720</height>
+				<width>604</width>
+				<height>420</height>
 				<texture>ContainerLeftImage.png</texture>
 			</control>
-		
 		</control>
-	
-<!-- Video Window -->
-	<control type="videowindow">
-		<posx>350</posx>
-		<posy>168</posy>
-		<width>706</width>
-		<height>414</height>
-    </control>
-	
+
 <!-- Ads List Container -->
 
-	 <control type="wraplist" id="120">
+		<control type="wraplist" id="120">
+			<posx>30</posx>
+			<posy>595</posy>
+			<width>1224</width>
+			<height>105</height>
+			<visible>true</visible>
+			<orientation>horizontal</orientation>
+			<pagecontrol>25</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<focusposition>0</focusposition>
+			<preloaditems>1</preloaditems>	   
+			<onup>2</onup>
+			<ondown>3</ondown>
+			<onleft>1</onleft>
+			<onright>1</onright>
 
-
-		<posx>30</posx>
-		<posy>595</posy>
-		<width>1224</width>
-		<height>105</height>
-		<visible>true</visible>
-		<orientation>horizontal</orientation>
-		<pagecontrol>25</pagecontrol>
-		<scrolltime>200</scrolltime>
-		<focusposition>0</focusposition>
-	    <preloaditems>1</preloaditems>	   
-	    <onup>2</onup>
-		<ondown>3</ondown>
-		<onleft>1</onleft>
-		<onright>1</onright>
-
-       <itemlayout width="1224" height="105">
-			<control type="label">
-             <posx>0</posx>
-             <posy>0</posy>
-             <width>1224</width>
-             <height>105</height>
-             <font>font23</font>
-             <textcolor>white</textcolor>
-             <selectedcolor>green</selectedcolor>
-             <label>ListItem.Label</label>
-          </control>     
-        </itemlayout>
-       <focusedlayout width="1224" height="105">
-          	<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1224</width>
-				<height>105</height>
-				<info>ListItem.Icon</info>
-			</control>
-       </focusedlayout>
-    </control>
-
+			<itemlayout width="1224" height="105">
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1224</width>
+					<height>105</height>
+					<font>font23</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>green</selectedcolor>
+					<label>ListItem.Label</label>
+				</control>     
+			</itemlayout>
+			
+			<focusedlayout width="1224" height="105">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1224</width>
+					<height>105</height>
+					<info>ListItem.Icon</info>
+				</control>
+			</focusedlayout>
+		</control>
 	
+
 	
    </controls>
 </window>
