@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+п»ї<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:boxee="http://boxee.tv/rss" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
 <boxee:expiry>0</boxee:expiry>
@@ -8,7 +8,7 @@
 <description>Boxee CafeCafe Menus</description>
 <language>en-us</language>
 <item>
-<title>ашезеъ бечш</title>
+<title>ЧђЧЁЧ•Ч—Ч•ЧЄ Ч‘Ч•Ч§ЧЁ</title>
 <media:content type="text/xml" url="http://www.macam.ac.il/nitzan/Boxee/menu1.xml" />
 <media:thumbnail url="http://www.macam.ac.il/nitzan/Boxee/1Left.png"/>
 </item>

@@ -62,8 +62,8 @@ main.onunload()
 		<control type="wraplist" id="140">
 			<posx>42</posx>
 			<posy>160</posy>
-			<width>594</width>
-			<height>410</height>
+			<width>577</width>
+			<height>393</height>
 			<visible>true</visible>
 			<orientation>horizontal</orientation>
 			<pagecontrol>25</pagecontrol>
@@ -71,15 +71,15 @@ main.onunload()
 			<focusposition>0</focusposition>
 			<preloaditems>1</preloaditems>	   
 
-			<itemlayout width="594" height="410">
+			<itemlayout width="577" height="393">
 			</itemlayout>
 			
-			<focusedlayout width="594" height="410">
+			<focusedlayout width="577" height="393">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>594</width>
-					<height>410</height>
+					<width>577</width>
+					<height>393</height>
 					<info>ListItem.Icon</info>
 				</control>
 			</focusedlayout>
@@ -90,7 +90,7 @@ main.onunload()
 		<control type="wraplist" id="130">
 			<posx>662</posx>
 			<posy>160</posy>
-			<width>578</width>
+			<width>450</width>
 			<height>411</height>
 			<visible>true</visible>
 			<orientation>vertical</orientation>
@@ -99,12 +99,12 @@ main.onunload()
 			<focusposition>0</focusposition>
 			<preloaditems>1</preloaditems>	   
 
-			<itemlayout width="250" height="40">
+			<itemlayout width="450" height="40">
 				<control type="label">
 					<description>some label that shows text</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>250</width>
+					<width>450</width>
 					<height>40</height>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -114,12 +114,12 @@ main.onunload()
 				</control>
 			</itemlayout>
 			
-			<focusedlayout width="250" height="40">
+			<focusedlayout width="450" height="40">
 				<control type="label">
 					<description>some label that shows text</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>250</width>
+					<width>450</width>
 					<height>40</height>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -133,10 +133,10 @@ main.onunload()
 <!--********** Ads List Container **********-->
 
 		<control type="wraplist" id="120">
-			<posx>30</posx>
-			<posy>595</posy>
-			<width>1224</width>
-			<height>105</height>
+			<posx>14</posx>
+			<posy>613</posy>
+			<width>1247</width>
+			<height>96</height>
 			<visible>true</visible>
 			<orientation>horizontal</orientation>
 			<pagecontrol>25</pagecontrol>
@@ -144,15 +144,15 @@ main.onunload()
 			<focusposition>0</focusposition>
 			<preloaditems>1</preloaditems>	   
 
-			<itemlayout width="1224" height="105">
+			<itemlayout width="1247" height="96">
 			</itemlayout>
 			
-			<focusedlayout width="1224" height="105">
+			<focusedlayout width="1247" height="96">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>1224</width>
-					<height>105</height>
+					<width>1247</width>
+					<height>96</height>
 					<info>ListItem.Icon</info>
 				</control>
 			</focusedlayout>

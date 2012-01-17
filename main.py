@@ -11,12 +11,16 @@ def onload():
 		
 	#Set Ads Container Path & Load Content
 	xmlpath = rssRoot + "ads.xml"
-	mc.ShowDialogNotification(xmlpath)
+	#mc.ShowDialogNotification(xmlpath)
 	mc.GetWindow(14000).GetList(120).SetContentURL("rss://"+xmlpath)
 	
-	#Set Menu Contaier Path
+	#Set Right Menu Container Path
 	xmlpath = rssRoot + "menu1.xml"
 	mc.GetWindow(14000).GetList(130).SetContentURL("rss://"+xmlpath)
+	
+	#Set Left Menu Container Path
+	xmlpath = rssRoot + "menus.xml"
+	mc.GetWindow(14000).GetList(140).SetContentURL("rss://"+xmlpath)
 	
 	#Create JobManager (For Ads Scrolling)
 	myJobManager = jobmanager.BoxeeJobManager(2)
