@@ -43,7 +43,7 @@ main.onunload()
 				<description>background of the right menu</description>
 				<posx>650</posx>
 				<posy>155</posy>
-				<width>588</width>
+				<width>607</width>
 				<height>421</height>
 				<texture>ContainerRighMenu.png</texture>
 			</control>
@@ -51,10 +51,10 @@ main.onunload()
 			<control type="image">
 				<posx>37</posx>
 				<posy>155</posy>
-				<width>604</width>
-				<height>420</height>
+				<width>607</width>
+				<height>421</height>
 				<texture>ContainerLeftImage.png</texture>
-			</control>						
+			</control> 					
 		</control>
 
 <!--********** Left Menu Container **********-->
@@ -76,8 +76,8 @@ main.onunload()
 			
 			<focusedlayout width="577" height="393">
 				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
+					<posx>13</posx>
+					<posy>15</posy>
 					<width>577</width>
 					<height>393</height>
 				<!-- 	<info>ListItem.Icon</info> -->
@@ -90,9 +90,9 @@ main.onunload()
 <!--********** Right Menu Container **********-->
 
 		<control type="wraplist" id="130">
-			<posx>662</posx>
+			<posx>655</posx>
 			<posy>160</posy>
-			<width>450</width>
+			<width>597</width>
 			<height>411</height>
 			<visible>true</visible>
 			<orientation>vertical</orientation>
@@ -101,33 +101,33 @@ main.onunload()
 			<focusposition>0</focusposition>
 			<preloaditems>1</preloaditems>	   
 
-			<itemlayout width="450" height="40">
+			<itemlayout width="597" height="40">
 				<control type="label">
 					<description>some label that shows text</description>
-					<posx>0</posx>
+					<posx>0r</posx>
 					<posy>0</posy>
-					<width>450</width>
-					<height>40</height>
-					<align>left</align>
+					<width>597</width>
+					<height>100</height>
+					<align>right</align>
 					<aligny>center</aligny>
 					<info>ListItem.Label</info>
-					<font>font38</font>
+					 <font>sans48b</font>
 					<textcolor>white</textcolor>
 				</control>
 			</itemlayout>
 			
-			<focusedlayout width="450" height="40">
+			<focusedlayout width="597" height="40">
 				<control type="label">
 					<description>some label that shows text</description>
-					<posx>0</posx>
+					<posx>0r</posx>
 					<posy>0</posy>
-					<width>450</width>
-					<height>40</height>
-					<align>left</align>
+					<width>597</width>
+					<height>100</height>
+					<align>right</align>
 					<aligny>center</aligny>
 					<info>ListItem.Label</info>
-					<font>font38</font>
-					<textcolor>green</textcolor>
+					 <font>sans48b</font>
+					<textcolor>white</textcolor>
 				</control>
 			</focusedlayout>
 		</control>	
