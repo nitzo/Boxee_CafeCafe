@@ -1,36 +1,33 @@
 <?xml version="1.0"?>
 <window type="window" id="14000">
 	
-<!------------------- Window Properties ------------------->
+<!--  Window Properties -->
 
 	<defaultcontrol always="false">120</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 
-<!------------------- Window Events ------------------->
+<!-- Window Events -->
 
-	<onload lang="python">
-		<![CDATA[
-		import main
-		main.onload()
-		]]>
-	</onload>
-	<onunload lang="python">
-		<![CDATA[
-		import main
-		main.onunload()
-		]]>
-	</onunload>   
-	   
-<!------------------- Controls ------------------->
+<onload lang="python"><![CDATA[
+import main
+main.onload()
+]]></onload>
+
+<onunload lang="python"><![CDATA[
+import main
+main.onunload()
+]]></onunload>   
+
+<!-- Controls -->
 	   
 	<controls>
 	
-<!------------------- Menue Containers ------------------->
+<!-- Menu Containers -->
 		
 		<control type="group">
 			<control type="image">
-				<description>background image</dedescription>
+				<description>background image</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
@@ -55,8 +52,80 @@
 				<texture>ContainerLeftImage.png</texture>
 			</control>						
 		</control>
-	
-<!------------------- Ads List Container ------------------->
+
+<!-- Left Menu Container -->
+
+		<control type="wraplist" id="140">
+			<posx>42</posx>
+			<posy>160</posy>
+			<width>594</width>
+			<height>410</height>
+			<visible>true</visible>
+			<orientation>horizontal</orientation>
+			<pagecontrol>25</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<focusposition>0</focusposition>
+			<preloaditems>1</preloaditems>	   
+
+			<itemlayout width="594" height="410">
+			</itemlayout>
+			
+			<focusedlayout width="594" height="410">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>594</width>
+					<height>410</height>
+					<info>ListItem.Icon</info>
+				</control>
+			</focusedlayout>
+		</control>
+
+		
+<!-- Right Menu Container -->
+		<control type="wraplist" id="130">
+			<posx>662</posx>
+			<posy>160</posy>
+			<width>578</width>
+			<height>411</height>
+			<visible>true</visible>
+			<orientation>vertical</orientation>
+			<pagecontrol>30</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<focusposition>0</focusposition>
+			<preloaditems>1</preloaditems>	   
+
+			<itemlayout width="250" height="40">
+				<control type="label">
+					<description>some label that shows text</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>250</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<info>ListItem.Label</info>
+					<font>font38</font>
+					<textcolor>white</textcolor>
+				</control>
+			</itemlayout>
+			
+			<focusedlayout width="250" height="40">
+				<control type="label">
+					<description>some label that shows text</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>250</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<info>ListItem.Label</info>
+					<font>font38</font>
+					<textcolor>green</textcolor>
+				</control>
+			</focusedlayout>
+		</control>	
+<!-- Ads List Container -->
 
 		<control type="wraplist" id="120">
 			<posx>30</posx>
