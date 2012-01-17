@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <window type="window" id="14000">
 	
-<!------------------- Window Properties ------------------->
+<!--********** Window Properties **********-->
 
 	<defaultcontrol always="false">120</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 
-<!------------------- Window Events ------------------->
+<!--********** Window Events **********-->
 
 	<onload lang="python">
 		<![CDATA[
@@ -22,15 +22,15 @@
 		]]>
 	</onunload>   
 	   
-<!------------------- Controls ------------------->
+<!--********** Controls **********-->
 	   
 	<controls>
 	
-<!------------------- Menue Containers ------------------->
+<!--********** Menue Containers **********-->
 		
 		<control type="group">
 			<control type="image">
-				<description>background image</dedescription>
+				<description>background</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
@@ -56,7 +56,7 @@
 			</control>						
 		</control>
 	
-<!------------------- Ads List Container ------------------->
+<!--********** Ads List Container **********-->
 
 		<control type="wraplist" id="120">
 			<posx>30</posx>
