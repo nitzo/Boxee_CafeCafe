@@ -1,25 +1,36 @@
 <?xml version="1.0"?>
 <window type="window" id="14000">
 	
+<!------------------- Window Properties ------------------->
+
 	<defaultcontrol always="false">120</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 
-<!-- Window Events -->	
-	<onload lang="python"><![CDATA[
-import main
-main.onload()
-]]></onload>
-	<onunload lang="python"><![CDATA[
-import main
-main.onunload()
-]]></onunload>
+<!------------------- Window Events ------------------->
+
+	<onload lang="python">
+		<![CDATA[
+		import main
+		main.onload()
+		]]>
+	</onload>
+	<onunload lang="python">
+		<![CDATA[
+		import main
+		main.onunload()
+		]]>
+	</onunload>   
 	   
-	   
+<!------------------- Controls ------------------->
 	   
 	<controls>
+	
+<!------------------- Menue Containers ------------------->
+		
 		<control type="group">
 			<control type="image">
+				<description>background image</dedescription>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
@@ -28,6 +39,7 @@ main.onunload()
 			</control>
 		
 			<control type="image">
+				<description>background of the right menu</description>
 				<posx>657</posx>
 				<posy>155</posy>
 				<width>588</width>
@@ -41,13 +53,10 @@ main.onunload()
 				<width>604</width>
 				<height>420</height>
 				<texture>ContainerLeftImage.png</texture>
-			</control>
-			
-			
+			</control>						
 		</control>
-
-		
-<!-- Ads List Container -->
+	
+<!------------------- Ads List Container ------------------->
 
 		<control type="wraplist" id="120">
 			<posx>30</posx>
@@ -60,22 +69,8 @@ main.onunload()
 			<scrolltime>200</scrolltime>
 			<focusposition>0</focusposition>
 			<preloaditems>1</preloaditems>	   
-			<onup>2</onup>
-			<ondown>3</ondown>
-			<onleft>1</onleft>
-			<onright>1</onright>
 
 			<itemlayout width="1224" height="105">
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1224</width>
-					<height>105</height>
-					<font>font23</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>green</selectedcolor>
-					<label>ListItem.Label</label>
-				</control>     
 			</itemlayout>
 			
 			<focusedlayout width="1224" height="105">
@@ -88,8 +83,6 @@ main.onunload()
 				</control>
 			</focusedlayout>
 		</control>
-	
-
 	
    </controls>
 </window>

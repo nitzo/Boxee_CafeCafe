@@ -8,8 +8,8 @@ def onload():
 	global myJobManager
 	
 	#Set Ads Container Path & Load Content
-	xmlpath = "www.macam.ac.il/nitzan/Boxee/1.xml"
-	#mc.ShowDialogNotification(xmlpath)
+	xmlpath = "www.macam.ac.il/nitzan/Boxee/ads.xml"
+	mc.ShowDialogNotification(xmlpath)
 	mc.GetWindow(14000).GetList(120).SetContentURL("rss://"+xmlpath)
 	
 	#Create JobManager (For Ads Scrolling)
