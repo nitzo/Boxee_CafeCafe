@@ -9,19 +9,19 @@
 
 <!--********** Window Events **********-->
 
-	<onload lang="python">
-	<![CDATA[
-	import main
-	main.onload()
-	]]>
-	</onload>
+<onload lang="python">
+<![CDATA[
+import main
+main.onload()
+]]>
+</onload>
 
-	<onunload lang="python">
-	<![CDATA[
-	import main
-	main.onunload()
-	]]>
-	</onunload>   
+<onunload lang="python">
+<![CDATA[
+import main
+main.onunload()
+]]>
+</onunload>   
 
 <!--********** Controls **********-->
 	   
