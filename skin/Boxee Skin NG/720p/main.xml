@@ -41,7 +41,7 @@ main.onunload()
 		
 			<control type="image">
 				<description>background of the right menu</description>
-				<posx>657</posx>
+				<posx>650</posx>
 				<posy>155</posy>
 				<width>588</width>
 				<height>421</height>
@@ -80,7 +80,9 @@ main.onunload()
 					<posy>0</posy>
 					<width>577</width>
 					<height>393</height>
-					<info>ListItem.Icon</info>
+				<!-- 	<info>ListItem.Icon</info> -->
+						<texture>1Left.png</texture>
+
 				</control>
 			</focusedlayout>
 		</control>
