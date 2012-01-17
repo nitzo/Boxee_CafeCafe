@@ -1,31 +1,35 @@
 <?xml version="1.0"?>
 <window type="window" id="14000">
 	
-<!--  Window Properties -->
+<!--**********  Window Properties **********-->
 
 	<defaultcontrol always="false">120</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
 
-<!-- Window Events -->
+<!--********** Window Events **********-->
 
-<onload lang="python"><![CDATA[
-import main
-main.onload()
-]]></onload>
+	<onload lang="python">
+	<![CDATA[
+	import main
+	main.onload()
+	]]>
+	</onload>
 
-<onunload lang="python"><![CDATA[
-import main
-main.onunload()
-]]></onunload>   
+	<onunload lang="python">
+	<![CDATA[
+	import main
+	main.onunload()
+	]]>
+	</onunload>   
 
-<!-- Controls -->
+<!--********** Controls **********-->
 	   
 	<controls>
-	
-<!-- Menu Containers -->
-		
 		<control type="group">
+	
+<!--********** Menu Containers **********-->
+		
 			<control type="image">
 				<description>background image</description>
 				<posx>0</posx>
@@ -53,7 +57,7 @@ main.onunload()
 			</control>						
 		</control>
 
-<!-- Left Menu Container -->
+<!--********** Left Menu Container **********-->
 
 		<control type="wraplist" id="140">
 			<posx>42</posx>
@@ -80,9 +84,9 @@ main.onunload()
 				</control>
 			</focusedlayout>
 		</control>
-
 		
-<!-- Right Menu Container -->
+<!--********** Right Menu Container **********-->
+
 		<control type="wraplist" id="130">
 			<posx>662</posx>
 			<posy>160</posy>
@@ -125,7 +129,8 @@ main.onunload()
 				</control>
 			</focusedlayout>
 		</control>	
-<!-- Ads List Container -->
+
+<!--********** Ads List Container **********-->
 
 		<control type="wraplist" id="120">
 			<posx>30</posx>
