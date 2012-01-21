@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:boxee="http://boxee.tv/rss" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<boxee:expiry>0</boxee:expiry>
+<boxee:ttl>0</boxee:ttl>
+<title>Boxee CafeCafe Ads</title>
+<link>http://www.macam.ac.il/nitzan/Boxee/Ads/ads.xml</link>
+<description>Boxee CafeCafe Ads</description>
+<language>en-us</language>
+<item>
+<title>Ad 1</title>
+<media:thumbnail url="http://www.macam.ac.il/nitzan/Boxee/Ads/Ad1_Tisan.png"/>
+</item>
+<item>
+<title>Ad 2</title>
+<media:thumbnail url="http://www.macam.ac.il/nitzan/Boxee/Ads/Ad1_Tisan_Black.png"/>
+</item>
+<item>
+<title>Ad 3</title>
+<media:thumbnail url="http://www.macam.ac.il/nitzan/Boxee/Ads/Ad1_Tisan_Blue.png"/>
+</item>
+<item>
+<title>Ad 4</title>
+<media:thumbnail url="http://www.macam.ac.il/nitzan/Boxee/Ads/Ad1_Tisan_Green.png"/>
+</item>
+<item>
+<title>Ad 5</title>
+<media:thumbnail url="http://www.macam.ac.il/nitzan/Boxee/Ads/Ad1_Tisan_Red.png"/>
+</item><!-- -->
+</channel>
+</rss>
