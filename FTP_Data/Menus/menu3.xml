@@ -8,22 +8,8 @@
 <description>Boxee CafeCafe Breakfast Menu</description>
 <language>en-us</language>
 <item>
-<title>בורקס רועים</title>
-</item>
-<item>
-<title>בוקר של בריאות</title>
-</item>
-<item>
-<title>בוקר מקסיקני</title>
-</item>
-<item>
-<title>קפה וכריכון</title>
-</item>
-<item>
-<title>מוזלי מפנק</title>
-</item><!-- -->
-<item>
-<title>קפה ומאפה</title>
+<title>תפריט סלטים</title>
+<media:thumbnail url="http://www.macam.ac.il/nitzan/Boxee/Menus/3Right.png"/>
 </item>
 </channel>
 </rss>

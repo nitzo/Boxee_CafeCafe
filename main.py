@@ -2,17 +2,16 @@ import mc
 import jobmanager
 import jobs
 import utils
+from params import *
 
 myJobManager = 0
-rssRoot = "www.macam.ac.il/nitzan/Boxee/"
-
 adsList = 0
 leftMenuList = 0
 rightMenuList = 0
 
 def onload():
 	global myJobManager, rssRoot, adsList, leftMenuList, rightMenuList
-
+	global adInterval, breakingNewsInterval, breakingNewsDuration
 	#Set Global Lists
 	adsList = mc.GetActiveWindow().GetList(120)
 	rightMenuList = mc.GetActiveWindow().GetList(130)
@@ -32,11 +31,11 @@ def onload():
 	myJobManager = jobmanager.BoxeeJobManager(1)
 	
 	#Add Ads Scroll Job To JobManager
-	myJob = jobs.ContainerScrollJob(3, adsList)
+	myJob = jobs.ContainerScrollJob(adInterval, adsList)
 	myJobManager.addJob(myJob)
 	
 	#Add Breaking News Job To JobManager
-	myJob = jobs.BreakingNewsJob(10, 14010, 10)
+	myJob = jobs.BreakingNewsJob(breakingNewsInterval, 14010, breakingNewsDuration)
 	myJobManager.addJob(myJob)
 	
 	#Start Job Manager
