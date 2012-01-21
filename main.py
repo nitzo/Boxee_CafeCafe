@@ -29,10 +29,14 @@ def onload():
 	scrollMenu()
 	
 	#Create JobManager
-	myJobManager = jobmanager.BoxeeJobManager(2)
+	myJobManager = jobmanager.BoxeeJobManager(1)
 	
 	#Add Ads Scroll Job To JobManager
-	myJob = jobs.ContainerScrollJob(10, adsList)
+	myJob = jobs.ContainerScrollJob(3, adsList)
+	myJobManager.addJob(myJob)
+	
+	#Add Breaking News Job To JobManager
+	myJob = jobs.BreakingNewsJob(10, 14010, 10)
 	myJobManager.addJob(myJob)
 	
 	#Start Job Manager
