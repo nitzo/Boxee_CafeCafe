@@ -12,4 +12,4 @@ breakingNewsInterval = 60
 breakingNewsDuration = 7
 
 ### Constants ###
-rssRoot = "www.macam.ac.il/nitzan/Boxee/"
+rssRoot = "www.menp.org/anmgroup/BoxeeCafeCafe/"
