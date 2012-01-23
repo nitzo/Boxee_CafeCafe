@@ -1,10 +1,16 @@
 #Cafe Cafe Boxee App Parameters
 
-#### Durations and Intervals ###
+#### Ads Settings ####
+
+adSource = "rss" #Use "local" or "rss"
+
+#If adSource is "local" this defines ads list
+localAdList = ["danceforever.gif", "Ad1_Tisan.png", "Ad1_Tisan_Blue.png"]	
+
+# Durations and Intervals ###
 
 #Interval for switching bottom page ads
 adInterval = 10	
-
 #Interval to show Breaking News (Full Screen Ad)	
 breakingNewsInterval = 60
 

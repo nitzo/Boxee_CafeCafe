@@ -152,7 +152,7 @@ main.scrollMenu("right")
 			<posy>613</posy>
 			<width>1247</width>
 			<height>96</height>
-			<visible>true</visible>
+			<visible>false</visible>
 			<orientation>horizontal</orientation>
 			<pagecontrol>20</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -171,6 +171,15 @@ main.scrollMenu("right")
 					<info>ListItem.Icon</info>
 				</control>
 			</focusedlayout>
+		</control>
+		
+		<control type="image" id="150">
+			<posx>14</posx>
+			<posy>613</posy>
+			<width>1247</width>
+			<height>96</height>
+			<visible>false</visible>
+			<texture>danceforever.gif</texture>
 		</control>
 	
    </controls>
