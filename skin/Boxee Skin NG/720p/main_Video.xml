@@ -10,15 +10,15 @@
 
 <onload lang="python">
 <![CDATA[
-import main
-main.onload()
+import mainVideo
+mainVideo.onload()
 ]]>
 </onload>
 
 <onunload lang="python">
 <![CDATA[
-import main
-main.onunload()
+import mainVideo
+mainVideo.onunload()
 ]]>
 </onunload> 
 
@@ -58,6 +58,16 @@ main.onunload()
 			<fadetime>600</fadetime>
 		</control>
 		
+		
+		<!-- Video Control -->
+		<control type="videowindow">
+			<posx>229</posx>
+			<posy>126</posy>
+			<width>818</width>
+			<height>471</height>
+		</control>
+		
+		
 		<!--********** Ads List Container **********-->
 
 		<control type="wraplist" id="120">
@@ -84,6 +94,15 @@ main.onunload()
 					<info>ListItem.Icon</info>
 				</control>
 			</focusedlayout>
+		</control>
+		
+		<control type="image" id="150">
+			<posx>14</posx>
+			<posy>613</posy>
+			<width>1247</width>
+			<height>96</height>
+			<visible>false</visible>
+			<texture>danceforever.gif</texture>
 		</control>
 			
    </controls>

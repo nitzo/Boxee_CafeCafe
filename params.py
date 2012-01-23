@@ -2,7 +2,7 @@
 
 #### Ads Settings ####
 
-adSource = "rss" #Use "local" or "rss"
+adSource = "local" #Use "local" or "rss"
 
 #If adSource is "local" this defines ads list
 localAdList = ["danceforever.gif", "Ad1_Tisan.png", "Ad1_Tisan_Blue.png"]	
