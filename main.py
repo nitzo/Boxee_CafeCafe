@@ -8,19 +8,19 @@ myJobManager = 0
 adsList = 0
 leftMenuList = 0
 rightMenuList = 0
+adImage = 0
 
 def onload():
-	global myJobManager, rssRoot, adsList, leftMenuList, rightMenuList
-	global adInterval, breakingNewsInterval, breakingNewsDuration
+	global myJobManager, rssRoot, adsList, leftMenuList, rightMenuList, adImage
+	
+	
 	#Set Global Lists
 	adsList = mc.GetActiveWindow().GetList(120)
 	rightMenuList = mc.GetActiveWindow().GetList(130)
 	leftMenuList = mc.GetActiveWindow().GetList(140)
 
-	
-	#Set Ads Container Path & Load Content
-	adsList.SetContentURL("rss://"+rssRoot+"Ads/ads.xml")
-		
+	adImage = mc.GetActiveWindow().GetImage(150)
+			
 	#Set Left Menu Container Path
 	leftMenuList.SetContentURL("rss://"+rssRoot+"Menus/menus.xml")
 	
@@ -30,13 +30,8 @@ def onload():
 	#Create JobManager
 	myJobManager = jobmanager.BoxeeJobManager(1)
 	
-	#Add Ads Scroll Job To JobManager
-	myJob = jobs.ContainerScrollJob(adInterval, adsList)
-	myJobManager.addJob(myJob)
-	
-	#Add Breaking News Job To JobManager
-	myJob = jobs.BreakingNewsJob(breakingNewsInterval, 14010, breakingNewsDuration)
-	myJobManager.addJob(myJob)
+	utils.SetScrollAds(adsList, adImage, myJobManager)
+	utils.SetBreakingNews(14010, myJobManager)
 	
 	#Start Job Manager
 	myJobManager.start()

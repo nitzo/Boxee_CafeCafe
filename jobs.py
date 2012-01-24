@@ -13,6 +13,22 @@ class ContainerScrollJob(jobmanager.BoxeeJob):
 	def process(self):
 		self.list.ScrollPageDown()
 		
+class LocalImageScrollJob(jobmanager.BoxeeJob):
+	
+	def __init__(self, interval, image, imageArr):
+		self.interval = interval
+		self.image = image
+		self.imageArr = imageArr
+		self.position = 0
+		jobmanager.BoxeeJob.__init__(self, "Local Image Scroll Job", interval)
+
+	def process(self):
+		self.image.SetTexture(self.imageArr[self.position])
+		self.position = self.position + 1
+		if (self.position == len(self.imageArr)):
+			self.position = 0
+		
+		
 class BreakingNewsJob(jobmanager.BoxeeJob):
 	
 	def __init__(self, interval, dialogId, duration):
