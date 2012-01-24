@@ -168,7 +168,8 @@ main.scrollMenu("right")
 					<posy>0</posy>
 					<width>1247</width>
 					<height>96</height>
-					<info>ListItem.Icon</info>
+				<info>ListItem.Icon</info>
+				
 				</control>
 			</focusedlayout>
 		</control>
