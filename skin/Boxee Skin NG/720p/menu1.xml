@@ -1,0 +1,15 @@
+﻿	<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:boxee="http://boxee.tv/rss" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<boxee:expiry>0</boxee:expiry>
+<boxee:ttl>0</boxee:ttl>
+<title>Boxee CafeCafe Breakfast Menu</title>
+<link>http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menu1.xml</link>
+<description>Boxee CafeCafe Breakfast Menu</description>
+<language>en-us</language>
+<item>
+<title>ארוחות בוקר</title>
+<media:thumbnail url="http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/1right.png"/>
+</item>
+</channel>
+</rss>

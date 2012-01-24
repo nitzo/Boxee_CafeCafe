@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:boxee="http://boxee.tv/rss" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<boxee:expiry>0</boxee:expiry>
+<boxee:ttl>0</boxee:ttl>
+<title>Boxee CafeCafe Menus</title>
+<link>http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menus.xml</link>
+<description>Boxee CafeCafe Menus</description>
+<language>en-us</language>
+<item>
+<title>ארוחות בוקר</title>
+<link>rss://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menu1.xml</link>
+<media:thumbnail url="http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/1Left.png"/>
+</item>
+
+<item>
+<title>שקשוקות</title>
+<link>rss://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menu2.xml</link>
+<media:thumbnail url="http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/2Left.png"/>
+</item>
+
+<item>
+<title>סלטים</title>
+<link>rss://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menu3.xml</link>
+<media:thumbnail url="http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/3Left.png"/>
+</item>
+
+<item>
+<title>סנדוויצ'ים</title>
+<link>rss://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menu4.xml</link>
+<media:thumbnail url="http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/4Left.png"/>
+</item>
+
+<item>
+<title>טוסטים ופיצות</title>
+<link>rss://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menu5.xml</link>
+<media:thumbnail url="http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/5Left.png"/>
+</item>
+
+<item>
+<title>קינוחים</title>
+<link>rss://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/menu6.xml</link>
+<media:thumbnail url="http://www.menp.org/anmgroup/BoxeeCafeCafe/Menus/6Left.png"/>
+</item>
+
+</channel>
+</rss>
