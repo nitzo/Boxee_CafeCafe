@@ -42,6 +42,26 @@ class BreakingNewsJob(jobmanager.BoxeeJob):
 		time.sleep(self.duration)
 		xbmc.executebuiltin("Dialog.Close("+ str(self.dialogId) +")")
 		
+class MenuScrollJob(jobmanager.BoxeeJob):	## TODO ##
+	
+	def __init__(self, interval, size, leftImage, rightImage, topImage):
+		self.size = size
+		self.interval = interval
+		self.leftImage = leftImage
+		self.rightImage = rightImage
+		self.topImage = topImage
+		self.counter = 1
+		jobmanager.BoxeeJob.__init__(self, "Menu Scroll Job", interval)
+
+	def process(self):
+		self.leftImage.SetTexture(str(self.counter) + "Left.png")
+		self.rightImage.SetTexture(str(self.counter) + "Right.png")
+		self.topImage.SetTexture(str(self.counter) + "Middle.png")
+		self.counter = self.counter + 1
+		
+		if (self.counter > self.size):
+			self.counter = 1
+		
 		
 
 

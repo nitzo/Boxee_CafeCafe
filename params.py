@@ -15,7 +15,10 @@ adInterval = 25
 breakingNewsInterval = 60
 
 #Duration for braking news dialog
-breakingNewsDuration = 7
+breakingNewsDuration = 15
+
+#Interval For menu switching
+menuInterval = 40
 
 ### Constants ###
 rssRoot = "www.menp.org/anmgroup/BoxeeCafeCafe/"

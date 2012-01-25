@@ -47,11 +47,11 @@ main.onunload()
 			<ondown>200</ondown>				
 <onleft lang="python"><![CDATA[
 import main
-main.scrollMenu("left")
+#main.scrollMenu("left")
 ]]></onleft>
 <onright lang="python"><![CDATA[
 import main
-main.scrollMenu("right")
+#main.scrollMenu("right")
 ]]></onright>
 		</control>
 	
@@ -86,8 +86,35 @@ main.scrollMenu("right")
 			</control> 					
 		</control>
 
-<!--********** Left Menu Container **********-->
+		<control type="group">
+			<!-- Left Menu -->
+			<control type="image" id="300">
+				<posx>55</posx>
+				<posy>175</posy>
+				<width>577</width>
+				<height>393</height>				
+			</control>
+			
+			<!-- Right Menu -->
+			<control type="image" id="310">
+				<posx>650</posx>
+				<posy>155</posy>
+				<width>582</width>
+				<height>411</height>				
+			</control>
 
+			<!-- Top Label -->
+			<control type="image" id="320">
+				<posx>833</posx>
+				<posy>31</posy>
+				<width>431</width>
+				<height>89</height>				
+			</control>			
+		</control>
+		
+		
+<!--********** Left Menu Container **********-->
+<!--
 		<control type="wraplist" id="140">
 			<posx>42</posx>
 			<posy>160</posy>
@@ -114,9 +141,9 @@ main.scrollMenu("right")
 				</control>
 			</focusedlayout>
 		</control>
-		
+-->	
 <!--********** Right Menu Container **********-->
-
+<!--
 		<control type="wraplist" id="130">
 			<posx>650</posx>
 			<posy>155</posy>
@@ -144,7 +171,7 @@ main.scrollMenu("right")
 				</control>
 			</focusedlayout>
 		</control>	
-
+-->
 <!--********** Ads List Container **********-->
 
 		<control type="wraplist" id="120">

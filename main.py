@@ -6,36 +6,34 @@ from params import *
 
 myJobManager = 0
 adsList = 0
-leftMenuList = 0
-rightMenuList = 0
+leftImage = 0
+rightImage = 0
+topImage = 0
 adImage = 0
 
 def onload():
-	global myJobManager, rssRoot, adsList, leftMenuList, rightMenuList, adImage
+	global myJobManager, rssRoot, adsList, leftImage, rightImage, topImage, adImage
 	
 	
-	#Set Global Lists
+	#Set Global Lists/Images
 	adsList = mc.GetActiveWindow().GetList(120)
-	rightMenuList = mc.GetActiveWindow().GetList(130)
-	leftMenuList = mc.GetActiveWindow().GetList(140)
+	
+	leftImage = mc.GetActiveWindow().GetImage(300)
+	rightImage = mc.GetActiveWindow().GetImage(310)
+	topImage = mc.GetActiveWindow().GetImage(320)
 
 	adImage = mc.GetActiveWindow().GetImage(150)
 			
-	#Set Left Menu Container Path
-	leftMenuList.SetContentURL("rss://"+rssRoot+"Menus/menus.xml")
-	
-	#Scroll Right Menu To First Item
-	scrollMenu()
-	
 	#Create JobManager
 	myJobManager = jobmanager.BoxeeJobManager(1)
 	
+	#Scroll Menu Automatically	
+	myJob = jobs.MenuScrollJob(menuInterval, 6, leftImage, rightImage, topImage)
+	myJob.process()
+	myJobManager.addJob(myJob)
+		
 	utils.SetScrollAds(adsList, adImage, myJobManager)
 		
-	#Scroll Menu Automatically	##TODO##
-	myJob = MenuScrollJob(40, leftMenuList, rightMenuList)
-	myJobManager.addJob(myJob)
-	
 	utils.SetBreakingNews(14010, myJobManager)
 	
 	#Start Job Manager
@@ -68,14 +66,6 @@ def scrollMenu(scrollDirection="none"):
 	rightMenuList.SetContentURL(focusedItem.GetPath())
 	
 
-class MenuScrollJob(jobs.ContainerScrollJob):	## TODO ##
-	
-	def __init__(self, interval, list1, list2):
-		self.list2 = list2
-		jobs.ContainerScrollJob.__init__(self, interval,list1)		
 
-	def process(self):
-		jobs.ContainerScrollJob.process(self)
-		scrollMenu("right")
 	
 	
