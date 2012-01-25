@@ -31,6 +31,11 @@ def onload():
 	myJobManager = jobmanager.BoxeeJobManager(1)
 	
 	utils.SetScrollAds(adsList, adImage, myJobManager)
+		
+	#Scroll Menu Automatically	##TODO##
+	myJob = MenuScrollJob(40, leftMenuList, rightMenuList)
+	myJobManager.addJob(myJob)
+	
 	utils.SetBreakingNews(14010, myJobManager)
 	
 	#Start Job Manager
@@ -63,5 +68,14 @@ def scrollMenu(scrollDirection="none"):
 	rightMenuList.SetContentURL(focusedItem.GetPath())
 	
 
+class MenuScrollJob(jobs.ContainerScrollJob):	## TODO ##
+	
+	def __init__(self, interval, list1, list2):
+		self.list2 = list2
+		jobs.ContainerScrollJob.__init__(self, interval,list1)		
+
+	def process(self):
+		jobs.ContainerScrollJob.process(self)
+		scrollMenu("right")
 	
 	
