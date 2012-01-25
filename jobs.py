@@ -55,7 +55,7 @@ class MenuScrollJob(jobmanager.BoxeeJob):	## TODO ##
 
 	def process(self):
 		self.leftImage.SetTexture(str(self.counter) + "Left.png")
-		self.rightImage.SetTexture(str(self.counter) + "Right.png")
+		self.rightImage.SetTexture(str(self.counter) + "right.png")
 		self.topImage.SetTexture(str(self.counter) + "Middle.png")
 		self.counter = self.counter + 1
 		
