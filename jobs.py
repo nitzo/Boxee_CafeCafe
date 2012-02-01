@@ -31,14 +31,22 @@ class LocalImageScrollJob(jobmanager.BoxeeJob):
 		
 class BreakingNewsJob(jobmanager.BoxeeJob):
 	
-	def __init__(self, interval, dialogId, duration):
+	def __init__(self, interval, dialogId, duration, imageId, imageArr):
 		self.interval = interval
 		self.dialogId = dialogId
 		self.duration = duration
+		self.imageArr = imageArr
+		self.imageId = imageId
+		self.position = 0
 		jobmanager.BoxeeJob.__init__(self, "Breaking News Job", interval)
 
 	def process(self):
 		mc.ActivateWindow(self.dialogId)
+		mc.GetWindow(self.dialogId).GetImage(self.imageId).SetTexture(self.imageArr[self.position])
+		self.position = self.position + 1
+		if (self.position == len(self.imageArr)):
+			self.position = 0
+		
 		time.sleep(self.duration)
 		xbmc.executebuiltin("Dialog.Close("+ str(self.dialogId) +")")
 		

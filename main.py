@@ -34,7 +34,7 @@ def onload():
 		
 	utils.SetScrollAds(adsList, adImage, myJobManager)
 		
-	utils.SetBreakingNews(14010, myJobManager)
+	utils.SetBreakingNews(14010, myJobManager, 120)
 	
 	#Start Job Manager
 	myJobManager.start()

@@ -7,7 +7,6 @@
 	<allowoverlay>yes</allowoverlay>
 
 
-
 <!--********** Controls **********-->
 	   
 	<controls>
@@ -39,7 +38,6 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>FullScreenAd.png</texture>
 			<fadetime>600</fadetime>
 		</control>
 			

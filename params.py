@@ -13,6 +13,7 @@ localAdList = ["Gykir.gif", "lexidale.gif", "sonic.gif", "OurAdvertisment.gif", 
 adInterval = 25	
 #Interval to show Breaking News (Full Screen Ad)	
 breakingNewsInterval = 60
+breakingNewsImageList = ["FullScreenAd_Soup.png", "FullScreenAd_Salad.png", "FullScreenAd_Wafel.png" ]
 
 #Duration for braking news dialog
 breakingNewsDuration = 15

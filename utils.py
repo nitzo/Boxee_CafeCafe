@@ -25,10 +25,10 @@ def SetScrollAds(adsList, adImage, myJobManager):
 		#Add to Job Manager
 		myJobManager.addJob(myJob)
 		
-def SetBreakingNews(windowId, myJobManager):
+def SetBreakingNews(windowId, myJobManager, imageId):
 	global breakingNewsInterval, breakingNewsDuration
 	#Add Breaking News Job To JobManager
-	myJob = jobs.BreakingNewsJob(breakingNewsInterval, windowId, breakingNewsDuration)
+	myJob = jobs.BreakingNewsJob(breakingNewsInterval, windowId, breakingNewsDuration, imageId, breakingNewsImageList)
 	myJobManager.addJob(myJob)
 	
 
