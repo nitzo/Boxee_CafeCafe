@@ -5,7 +5,7 @@
 adSource = "local" #Use "local" or "rss"
 
 #If adSource is "local" this defines ads list
-localAdList = ["Gykir.gif", "lexidale.gif", "sonic.gif", "OurAdvertisment.gif"]	
+localAdList = ["Gykir.gif", "lexidale.gif", "sonic.gif", "OurAdvertisment.gif", "TomVedan.gif"]	
 
 # Durations and Intervals ###
 
