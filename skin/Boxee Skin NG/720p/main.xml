@@ -27,13 +27,13 @@ main.onunload()
 	   
 	<controls>
 		<!-- Button Control For capturing events -->
-		<control type="button" id="200">
+	<!--	<control type="button" id="200">
 		   <description>button control for up down left and right events</description>
 			<posx>80</posx>
 			<posy>60</posy>
 			<width>200</width>
 			<height>40</height>
-			<visible>true</visible>
+			<visible>false</visible>
 			<colordiffuse>FFFFFFFF</colordiffuse>
 			<label>Click Me!</label>
 			<font>font21</font>
@@ -53,7 +53,7 @@ import main
 import main
 #main.scrollMenu("right")
 ]]></onright>
-		</control>
+		</control>-->
 	
 		<control type="group">
 	
